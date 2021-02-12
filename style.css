@@ -9,33 +9,38 @@ body {
   background-color: goldenrod;
 }
 
-.hexGrid {
-  margin: auto;
-  margin-top: 50px;
+.hexGridA {
   max-width: 1000px;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-auto-rows: 200px;
   grid-gap: 14px;
-  padding-bottom: 50px;
+  margin-bottom: 14px;
   background-color: gold;
 }
 
-.hexGrid>div:nth-child(odd) {
-  background: whitesmoke;
+.hexGridB {
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-auto-rows: 200px;
+  grid-gap: 14px;
+  padding-left: 127px;
+  margin-bottom: 14px;
+  background-color: pink;
 }
 
 .hex {
   display: flex;
   position: relative;
-  width: 240px;
-  height: 265px;
+  width: 240px; /* creates overflow to grid-auto-rows: 200px */
+  height: 265px; /* creates overflow to grid-auto-rows: 200px */
   background-color: #424242;
-  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); 
 }
 
 
-
+/*
 .hex:first-child {
   grid-row-start: 1;
   grid-column: 2 / span 2;
@@ -85,3 +90,4 @@ body {
   grid-row-start: 3;
   grid-column: 6 / span 2;
 }
+*/
