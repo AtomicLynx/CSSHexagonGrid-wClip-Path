@@ -19,21 +19,21 @@ body {
 }
 
 .hexGridA {
-  width: 96%; /* % of .hexGrid.width: (.hex.width x 0.75) x (..grid-auto-rows x2) + ((.hex.width x 0.1) x 3), for size + space between hexes */
+  width: 960px; /* (.hex.width x 0.75) x (..grid-auto-rows x2) + ((.hex.width x 0.1) x 3), for size + space between hexes */
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: 100px;
-  margin-top: 0.5%; /* ..grid-auto-rows x 0.05, for space between hexes verticaly, .hexGridA + .hexGridB work in conjunction */
+  margin-top: 5px; /* ..grid-auto-rows x 0.05, for space between hexes verticaly, .hexGridA + .hexGridB work in conjunction */
   background-color: gold;
 }
 
 .hexGridB {
-  width: 96%;
+  width: 960px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: 100px; /* original value */
-  margin-left: 16%; /* (.hex.width x 0.75) + (..grid-auto-rows x 0.10), for size + space between hexes (.hexGridA and .hexGridB) */
-  margin-top: 0.5%; 
+  margin-left: 160px; /* (.hex.width x 0.75) + (..grid-auto-rows x 0.10), for size + space between hexes (.hexGridA and .hexGridB) */
+  margin-top: 5px; 
   background-color: pink;
 }
 
