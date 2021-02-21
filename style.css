@@ -12,6 +12,11 @@ body {
   justify-content: center;
 }
 
+.monitor {
+  width: 800px;
+  overflow: scroll;
+}
+
 .hexGrid {
   width: 1000px;
   margin: 50px;
