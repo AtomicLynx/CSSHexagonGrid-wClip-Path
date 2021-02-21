@@ -6,34 +6,37 @@ img {
 }
 
 body {
-  background-color: goldenrod;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: goldenrod;
 }
 
+
+/* The Honeycomb aka Hex Grid */
 .hexGrid {
   width: 1000px;
-  margin: 50px;
+  margin-bottom: 100px;
   background-color: mediumaquamarine;
 }
 
 .hexGridA {
-  width: 960px; /* (.hex.width x 0.75) x (..grid-auto-rows x2) + ((.hex.width x 0.1) x 3), for size + space between hexes */
+  width: 960px; /* (.hex.width x 0.75) x (..grid-auto-rows x2) + ((.hex.width x 0.1) x 3), for size + (10px) space between hexes */
+  height: 92px; /* (.hex.height / 2) + (space between hexes / 2) */
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: 100px;
-  margin-top: 5px; /* ..grid-auto-rows x 0.05, for space between hexes verticaly, .hexGridA + .hexGridB work in conjunction */
   background-color: gold;
 }
 
 .hexGridB {
   width: 960px;
+  height: 92px; /* (.hex.height / 2) + (space between hexes / 2)S */
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: 100px; /* original value */
-  margin-left: 160px; /* (.hex.width x 0.75) + (..grid-auto-rows x 0.10), for size + space between hexes (.hexGridA and .hexGridB) */
-  margin-top: 5px; 
+  margin-left: 160px; /* (.hex.width x 0.75) + (..grid-auto-rows x 0.10), for size + (10px) space between hexes (.hexGridA and .hexGridB) */
   background-color: pink;
 }
 
@@ -41,7 +44,7 @@ body {
   display: flex;
   position: relative;
   width: 200px; /* ..grid-auto-rows x 2, to creates overflow to grid-auto-rows */
-  height: 200px; /* ..grid-auto-rows x 2, to creates overflow to grid-auto-rows */
+  height: 174px; /* ..grid-auto-rows x 2, to creates overflow to grid-auto-rows */
   background-color: #424242;
   clip-path: polygon(25% 0%, 75% 0%,100% 50%,75% 100%,25% 100%,0% 50%);
 }
