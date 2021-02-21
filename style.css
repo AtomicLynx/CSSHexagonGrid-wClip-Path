@@ -5,6 +5,12 @@ img {
   object-fit: cover;
 }
 
+p {
+  text-align: center;
+  margin: auto;
+  color: white;
+}
+
 body {
   height: 100vh;
   display: flex;
@@ -47,5 +53,10 @@ body {
   height: 174px; /* ..grid-auto-rows x 2, to creates overflow to grid-auto-rows */
   background-color: #424242;
   clip-path: polygon(25% 0%, 75% 0%,100% 50%,75% 100%,25% 100%,0% 50%);
+}
+
+.hex:hover {
+  background: linear-gradient(15deg, goldenrod, #000000);
+  transition: 5s;
 }
 
